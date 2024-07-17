@@ -1,12 +1,16 @@
 function createHorizontalReverseTriangle(n) {
   let triangleRes = "";
-  for (let i = n; i > 0; i--) {
-    for (let j = n - i; j > 0; j--) {
-      triangleRes += "#";
+  for (let i = 0; i < n; i++) {
+    for (let j = 0; j <= n; j++) {
+      if (j < n - i) {
+        triangleRes += " ";
+      } else {
+        triangleRes += "#";
+      }
     }
     triangleRes += "\n";
   }
   return triangleRes;
 }
 
-console.log(createHorizontalReverseTriangle(7));
+console.log(createHorizontalReverseTriangle(5));
