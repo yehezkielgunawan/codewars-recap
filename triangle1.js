@@ -3,7 +3,7 @@
 function createTriangle(n) {
   let triangleRes = "";
   for (let i = 0; i < n; i++) {
-    for (j = 0; j < i; j++) {
+    for (j = 0; j <= i; j++) {
       triangleRes += "#";
     }
     triangleRes += "\n";
@@ -11,6 +11,4 @@ function createTriangle(n) {
   return triangleRes;
 }
 
-console.log(createTriangle(7));
-console.log(createTriangle(10));
 console.log(createTriangle(5));
