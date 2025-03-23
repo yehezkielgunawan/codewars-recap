@@ -2,8 +2,6 @@
 
 function findMissingNumber(sequence) {
 	const isIncludeNonNumeric = /[^\d\s]/;
-	const counter = 0;
-	const sequenceLength = sequence.split("").length;
 	const elements = sequence.trim().split(/\s+/);
 
 	if (!sequence.trim()) {
